@@ -76,3 +76,21 @@
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
+
+/*  Q4 */
+
+#section4 {
+   display: inline-block;
+   
+ 
+    width:auto; 
+   height: 350px;
+  }
+  
+  select {
+      width:380px;
+      height: 380px ;
+      padding:10px;
+      scale: auto;
+  }
+  

@@ -21,12 +21,12 @@
             <!-- Q1  -->
             <label for="Q1">Question 1.  Êtes-vous superstitieux?<br/></label>
 
-                    <input id="idq1radio1" name="superstitieux" type="radio" autofocus value="2">
+                    <input id="idq1radio1" name="superstitieux" type="radio" autofocus value="2" onclick="javascript:document.getElementById('feedq1').style.display = 'none';">
                     <label for="idq1radio1">Oui très super...tieux </label> 
                 </br>
                    
                     
-                    <input id="idq1radio2" name="superstitieux" type="radio" value="0"> 
+                    <input id="idq1radio2" name="superstitieux" type="radio" value="0" onclick="javascript:document.getElementById('feedq1').style.display = 'none';" > 
                     <label for="idq1radio2">Non, shu bin virile moi là! </label>
                 </br>
                     
@@ -47,7 +47,7 @@
 
         <section id="section2" style="width: 25%; padding:7px; border: 1px black groove;">
 
-              <label for="Q2">Question 2.  Êtes-vous fan de l'ésotérisme et du côté mystique de la magie?<br/></label>
+              <label for="Q2">Question 2.  Êtes-vous fan de l'ésotérisme et du côté mystique de la magie? - (échelle de 1 à 10)<br/></label>
              
               <input type="range" name-"q2InputSlider" min="1" max="10" value="5" class="slider" oninput="q2OutputSliderId.value = q2InputSliderId.value" id="q2InputSliderId">
              
@@ -88,10 +88,74 @@
             <!-- POUR LA TOGGLE SWITCH (FIN) -->
                   
 
-
         </section>
 
     </br>
+
+
+<!-- Q4  -->
+<p>Q4 test</p>
+    
+
+        <section id="section4">
+            <h6>Utiliser CTRL pour choisir de multiples options</h6>
+            
+            <select multiple size="12">
+                
+                <option disabled style="text-align: left"><h2>DOMAINE</h2></option>
+                <option disabled></option>
+                <optgroup label="Les gens oeuvrant dans le domaine pseudo-ésotérique">
+                    <option>Diseurs de bonne aventure</option>
+                    <option>Guérisseurs apprentis</option>
+                    <option>Chamans à temps partiel</option>
+                    <option>Vendeurs de bracelets à partir de noisetier</option>
+                </optgroup>
+
+                <optgroup label="Spécialiste de la santé">
+                    <option>Psychologues</option>
+                    <option>Chirurgiens</option>
+                    <option>Pharmacologues</option>
+                </optgroup>
+
+            <optgroup label="Domaine des Affaires">
+                <option>Agent Immobilliers</option>
+                <option>Avocats</option>
+            </optgroup>
+
+            <optgroup label="les Faiseurs de magie"></optgroup>
+                <option>Gardiens d'enfants</option>
+                <option>Infirmiers</option>
+            </optgroup>
+            
+                <option disabled></option>
+            </select>
+            
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
