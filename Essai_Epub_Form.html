@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" lang="fr-CA" >
+<link rel="stylesheet" type="text/css" href="EPUBStyle.css">
+<script type="text/javascript" src="Epub.js"></script>
+<title>EL TiTRo</title>
+</head>
+
+<body>
+
+    <h1></h1>
+    <form>
+        <fieldset>
+
+            <!-- Form Name -->
+        <legend>Est-ce que ce livre est fait pour vous?</legend>
+
+       <section id="section1">
+
+            <!-- Q1  -->
+            <label for="Q1">Question 1.  Êtes-vous superstitieux?<br/></label>
+
+                    <input id="idq1radio1" name="superstitieux" type="radio" autofocus value="2">
+                    <label for="idq1radio1">Oui très super...tieux </label> 
+                </br>
+                   
+                    
+                    <input id="idq1radio2" name="superstitieux" type="radio" value="0"> 
+                    <label for="idq1radio2">Non, shu bin virile moi là! </label>
+                </br>
+                    
+                  
+                    <input id="idq1radio3" name="superstitieux" type="radio" value="1" onclick="javascript:document.getElementById('feedq1').style.display = 'block';" >                                
+                    <label for="idq1radio3">Bin, just un brin dans le noir le soir</label>        
+                    
+                <!-- Section Réponse/Feedback pour Q1-->
+                    <p id="feedq1" style="display: none;" class="feedback">(Moi aussi un ti-brin mais <strong><u>juste dans le noir là)</u></strong></p>        
+            
+
+        </section>
+
+
+    </br>
+    
+        <!-- Q2  -->
+
+        <section id="section2" style="width: 25%; padding:7px; border: 1px black groove;">
+
+              <label for="Q2">Question 2.  Êtes-vous fan de l'ésotérisme et du côté mystique de la magie?<br/></label>
+             
+              <input type="range" name-"q2InputSlider" min="1" max="10" value="5" class="slider" oninput="q2OutputSliderId.value = q2InputSliderId.value" id="q2InputSliderId">
+             
+              <output name="q2OutputSlider" id="q2OutputSliderId">5</output>
+                            
+
+
+        </section>
+
+    </br>
+
+
+
+<!-- Q3  -->
+
+        <section id="section3" >
+
+            <label for="Q3">Question 3.  Croyez-vous que la sorcellerie est mise à profit majoritairement pour des causes foncièrement bonnes (LE BIEN) ou mauvaises (LE MAL)
+            
+                <br/>
+            
+            </label>
+
+            <!-- POUR LA TOGGLE SWITCH  -->
+
+                     <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="alert(encoded); play();">
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                               <span class="onoffswitch-inner"></span>
+                               <span class="onoffswitch-switch"></span>
+                            </label>
+                    </div>
+
+                <!-- LE SON-->
+
+                <audio id="audio" src="Laughter.ogg" ></audio>
+
+            <!-- POUR LA TOGGLE SWITCH (FIN) -->
+                  
+
+
+        </section>
+
+    </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </fieldset>
+    </form>
+   
+   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
